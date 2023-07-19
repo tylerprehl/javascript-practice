@@ -34,3 +34,16 @@ btn4.addEventListener('click', function (e) {
     // console.log(e.target); // logs just the DOM node clicked
     e.target.style.background = 'blue'; // turns background of button blue
 });
+
+
+/* ATTACHING LISTENERS TO GROUPS OF NODES */
+const buttons = document.querySelectorAll('.group-button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
