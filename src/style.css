@@ -9,3 +9,24 @@ td, th {
     padding: 10px 20px;
     text-align: center;
 }
+
+tbody {
+    font-size: 95%;
+    font-style: italic;
+}
+  
+tfoot {
+    font-weight: bold;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(230, 230, 230);
+}
+  
+tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+}
+
+caption {
+    padding: 10px;
+}
