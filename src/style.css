@@ -30,3 +30,40 @@ tr:nth-child(odd) td {
 caption {
     padding: 10px;
 }
+
+table.planets {
+    border-collapse: collapse;
+    border: 2px solid darkgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+td.planets, th.planets {
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+th.planets {
+    background-color: gainsboro;
+}
+
+.planets>tbody {
+    font-size: 95%;
+    font-style: normal;
+}
+  
+.planets>tfoot {
+    font-weight: bold;
+}
+
+tr.planets:nth-child(even) td {
+    background-color: rgb(230, 230, 230);
+}
+  
+tr.planets:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+}
+
+.planets>caption {
+    padding: 10px;
+}
