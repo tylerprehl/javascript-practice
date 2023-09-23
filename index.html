@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Dom Editing</title>
+    <link rel="stylesheet" href="src/style.css">
     <script src="js-files/events-1.js" defer></script>
 </head>
 <body>
@@ -19,5 +20,115 @@
     <button class="group-button" id="1">Click Me Group</button>
     <button class="group-button" id="2">Click Me Group</button>
     <button class="group-button" id="3">Click Me Group</button>
+    <br>
+    <p>Tables</p>
+    <table>
+      <col />
+      <col style="background-color: aliceblue" span="3"/>
+      <tr>
+        <th></th>
+        <th>Trait 1</th>
+        <th>Trait 2</th>
+        <th>Trait 3</th>
+      </tr>
+      <tr>
+        <td>Dog</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <br>
+    <p>Animals table</p>
+    <table>
+      <tr>
+        <th colspan="2">Animals</th>
+      </tr>
+      <tr>
+        <th>Hippopotamus</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Horse</th>
+        <td>Mare</td>
+      </tr>
+      <tr>
+        <td>Stallion</td>
+      </tr>
+      <tr>
+        <th>Crocodile</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Chicken</th>
+        <td>Hen</td>
+      </tr>
+      <tr>
+        <td>Rooster</td>
+      </tr>
+    </table>
+    <br>
+    <p>School Timetable</p>
+  <table>
+    <colgroup>
+      <col style="min-width: 80px; font-weight: bold;">
+      <col style="min-width: 80px;">
+      <col style="background-color: lightgreen;">
+      <col style="min-width: 80px;">
+      <col style="background-color: lightgreen;">
+      <col style="background-color: burlywood; border: 3px solid maroon">
+      <col style="min-width: 80px;">
+      <col style="min-width: 80px;">
+    </colgroup>
+    <tr>
+      <th></th>
+      <th>Mon</th>
+      <th>Tues</th>
+      <th>Wed</th>
+      <th>Thurs</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+    <tr>
+      <th>1st Period</td>
+      <td>English</td>
+      <td></td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2nd Period</td>
+      <td>English</td>
+      <td>English</td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3rd Period</td>
+      <td></td>
+      <td>German</td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4th Period</td>
+      <td></td>
+      <td>German</td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <br><br>
 </body>
 </html>
