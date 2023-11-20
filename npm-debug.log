@@ -1,0 +1,32 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/home/ttp126/.nvm/versions/node/v18.16.1/bin/node',
+1 verbose cli   '/home/ttp126/node_modules/.bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'build-css',
+1 verbose cli   '--load-path=node_modules',
+1 verbose cli   '-w',
+1 verbose cli   'src:dist',
+1 verbose cli   '--style=compressed'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v18.16.1
+4 verbose stack Error: missing script: build-css
+4 verbose stack     at run (/home/ttp126/node_modules/npm/lib/run-script.js:142:19)
+4 verbose stack     at /home/ttp126/node_modules/npm/lib/run-script.js:58:5
+4 verbose stack     at /home/ttp126/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
+4 verbose stack     at checkBinReferences_ (/home/ttp126/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
+4 verbose stack     at final (/home/ttp126/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
+4 verbose stack     at then (/home/ttp126/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /home/ttp126/node_modules/npm/node_modules/read-package-json/read-json.js:243:12
+4 verbose stack     at /home/ttp126/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+5 verbose cwd /home/ttp126/Documents/Repos/javascript-practice
+6 error Linux 6.2.0-36-generic
+7 error argv "/home/ttp126/.nvm/versions/node/v18.16.1/bin/node" "/home/ttp126/node_modules/.bin/npm" "run" "build-css" "--load-path=node_modules" "-w" "src:dist" "--style=compressed"
+8 error node v18.16.1
+9 error npm  v2.15.12
+10 error missing script: build-css
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

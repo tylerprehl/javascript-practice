@@ -2,13 +2,11 @@
   "name": "javascript-practice",
   "version": "1.0.0",
   "description": "Although originally named with the intention of using for JavaScript practice (which it holds true to), this repo also now serves as an HTML and CSS scratch-work ground.",
-  "main": "index.js",
+  "main": "./js-files/test-driven-development-main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js",
     "start": "webpack serve --open",
-    "watch-css": "yarn build-css --load-path=node_modules -w src:dist --style=compressed",
-    "watch:files": "onchange 'src/**/*' 'index.html' -- yarn build"
+    "watch:files": "onchange 'js-files/*' 'index.html' -- npm run build"
   },
   "author": "Tyler Prehl",
   "license": "ISC",
@@ -18,6 +16,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
+    "onchange": "^7.1.0",
     "prettier": "3.1.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",

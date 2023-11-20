@@ -9,3 +9,4 @@ console.log(TestFunctions.calculator(1, '+', 4))
 console.log(TestFunctions.calculator(1, '-', 4))
 console.log(TestFunctions.calculator(1, '*', 2))
 console.log(TestFunctions.calculator(1, '/', 4))
+console.log('Test');
