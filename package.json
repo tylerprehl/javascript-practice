@@ -4,15 +4,24 @@
   "description": "Although originally named with the intention of using for JavaScript practice (which it holds true to), this repo also now serves as an HTML and CSS scratch-work ground.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch-css": "yarn build-css --load-path=node_modules -w src:dist --style=compressed",
+    "watch:files": "onchange 'src/**/*' 'index.html' -- yarn build"
   },
   "author": "Tyler Prehl",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.8.1",
     "eslint": "^8.53.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
-    "prettier": "3.1.0"
+    "prettier": "3.1.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
