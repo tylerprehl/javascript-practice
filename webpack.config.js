@@ -1,12 +1,25 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './js-files/test-driven-development-main.js',
-  output: {
-    filename: 'test-driven-bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+  entry: {
+    index: './js-files/test-driven-development-main.js',
+    print: './js-files/test-driven-development-functions.js',
   },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'JavaScript Practice',
+      template: './index.html',
+    }),
+  ],
   module: {
     rules: [
       {
