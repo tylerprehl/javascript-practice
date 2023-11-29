@@ -13,3 +13,4 @@ Although originally named with the intention of using for JavaScript practice (w
 * ESLint
 * Prettier
 * Webpack
+* Jest
