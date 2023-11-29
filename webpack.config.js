@@ -30,7 +30,7 @@ module.exports = {
           // Interprets `@import` and `url()` like `import/require()` and will resolve them
           'css-loader',
         ],
-        exclude: /\.node_modules\//
+        exclude: /node_modules/
       },
     ],
   },
