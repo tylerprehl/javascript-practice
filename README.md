@@ -6,6 +6,7 @@ Although originally named with the intention of using for JavaScript practice (w
 * JS APIs
 * JS Test-Driven Development
 * HTML Tables
+* HTML Forms
 * CSS Grid
 
 ## Tools Used:
